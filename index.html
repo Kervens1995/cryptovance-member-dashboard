@@ -1,1 +1,90 @@
-index.html
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRYPTOVANCE Member Dashboard</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101b35;
+      color: white;
+      text-align: center;
+    }
+    header {
+      padding: 25px 15px;
+      border-bottom: 1px solid #d5ad54;
+    }
+    .logo {
+      color: #e5c36a;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .container {
+      max-width: 650px;
+      margin: 55px auto;
+      padding: 25px;
+    }
+    h1 { font-size: 34px; }
+    p { color: #c6d2e8; line-height: 1.7; }
+    button {
+      background: #d5ad54;
+      color: #101b35;
+      border: none;
+      padding: 13px 22px;
+      border-radius: 7px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 8px;
+    }
+    .demo {
+      border: 1px solid #d5ad54;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 30px;
+      color: #e5c36a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CRYPTOVANCE</div>
+    <p>Member Dashboard</p>
+  </header>
+
+  <main class="container">
+    <h1 id="title">Bienvenue chez CRYPTOVANCE</h1>
+    <p id="description">
+      L'innovation au service de votre avenir financier.
+    </p>
+
+    <button onclick="changeLanguage('fr')">Français</button>
+    <button onclick="changeLanguage('en')">English</button>
+
+    <div class="demo">
+      DEMO ACCOUNT — NO REAL MONEY
+    </div>
+  </main>
+
+  <script>
+    function changeLanguage(language) {
+      if (language === 'en') {
+        document.getElementById('title').textContent =
+          'Welcome to CRYPTOVANCE';
+        document.getElementById('description').textContent =
+          'Innovation serving your financial future.';
+      } else {
+        document.getElementById('title').textContent =
+          'Bienvenue chez CRYPTOVANCE';
+        document.getElementById('description').textContent =
+          "L'innovation au service de votre avenir financier.";
+      }
+    }
+  </script>
+</body>
+</html>
+
